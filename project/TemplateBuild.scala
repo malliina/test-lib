@@ -12,12 +12,11 @@ object TemplateBuild extends Build {
 
   lazy val projectSettings = bintray.Plugin.bintraySettings ++ Seq(
     organization := "com.github.malliina",
-    version := "0.0.6",
+    version := "0.0.7",
     scalaVersion := "2.11.5",
     fork in Test := true,
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
     bintrayOrganization in bintrayConf := None,
-    publishMavenStyle := false,
     repository in bintrayConf := "testrepo"
   )
 }
